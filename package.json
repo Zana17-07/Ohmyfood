@@ -1,0 +1,25 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --include-path sass/base --include-path sass/components --include-path sass/layout --include-path sass/utils --watch sass/ -o CSS/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zana17-07/ohmyfood.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Zana17-07/ohmyfood/issues"
+  },
+  "homepage": "https://github.com/Zana17-07/ohmyfood#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1"
+  }
+  
+}

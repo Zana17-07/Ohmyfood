@@ -1,0 +1,17 @@
+@import 'box-sizing';
+@import 'normalize';
+@import 'typography';
+@import 'boutons';
+@import 'footer';
+@import 'header';
+@import 'main-menu';
+@import 'fonctions';
+@import 'mixins';
+@import 'variables';
+
+
+.bg-grey{
+    background-color: $bg-colour;
+}
+
+/* un petit commentaire*/
