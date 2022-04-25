@@ -1,11 +1,21 @@
+@import 'variables';
+
 header{
     width: 100%;
+    div{
+        display: flex;
+        align-items: center;
+        a i{
+            margin-right: $margin-right;
+            margin-left: $margin-left;
+            cursor: pointer;   
+        }
+    }
+    h1{
+        display: flex;
+        justify-content: center;
+        font-family: $font-logo;   
+    }
 }
 
-h1{
-    display: flex;
-    justify-content: center;
-    font-family: $font-logo;
-    
-           
-}
+
