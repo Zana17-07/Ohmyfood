@@ -10,7 +10,75 @@
 @import 'variables';
 
 
-.bg-grey{
-    background-color: $bg-colour-light;
+main{
+    width: 100%;
+    font-family: $font-text;
+
+/*formulaire de recherche*/
+    .location-bar{
+        height: 60px;
+        box-shadow: inset -2px 4px 5px -4px grey;
+        padding-left: ($padding-left + 2.5rem);
+        .no-border{
+            border: none;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .margin{
+            margin-left: ($margin-left - 0.5rem);
+        }
+    }
+
+    .flexcenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bg-grey{
+        background-color: #F2F2F2;  
+    }
+
+/* Présentation*/
+    .presentation{
+        height: 350px;
+        text-align: center;
+        padding-top: 40px;
+        
+        .h3{
+            margin-block-end: $margin-block-end;
+            margin-block-start: $margin-block-start;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .padding{ 
+            padding-left: ($padding-left + 3.5rem);
+            padding-right: 5rem;
+        }
+        
+        p{
+            font-size: $font-size-text;
+            padding-left: $padding-left;
+            padding-right: 1.5rem;
+            padding-top: 0.5rem;
+            padding-bottom: 2rem;
+            margin-block-start: $margin-block-start;
+            margin-block-end: $margin-block-end;
+        }
+    }
+    .bg-grey-light{
+        background-color: $bg-colour-lighter;
+    }
+
+/*Fonctionnement*/
+    .working{
+        height: 500px;
+        padding-left: 1.5rem;
+    }
 }
+
+
+
+
 
