@@ -1,6 +1,5 @@
 @import 'box-sizing';
 @import 'normalize';
-@import 'typography';
 @import 'boutons';
 @import 'footer';
 @import 'header';
@@ -9,6 +8,30 @@
 @import 'mixins';
 @import 'variables';
 
+
+/*GENERAL*/
+
+.flexcenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.h3{
+    margin-block-end: $margin-block-end;
+    margin-block-start: $margin-block-start;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.bg-grey-light{
+    background-color: $bg-colour-lighter;
+}
+
+
+
+/*BODY*/
 
 main{
     width: 100%;
@@ -29,16 +52,10 @@ main{
             margin-left: ($margin-left - 0.5rem);
         }
     }
-
-    .flexcenter{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
     .bg-grey{
         background-color: #F2F2F2;  
     }
+    
 
 /* Présentation*/
     .presentation{
@@ -46,12 +63,7 @@ main{
         text-align: center;
         padding-top: 40px;
         
-        .h3{
-            margin-block-end: $margin-block-end;
-            margin-block-start: $margin-block-start;
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
+        
         .padding{ 
             padding-left: ($padding-left + 3.5rem);
             padding-right: 5rem;
@@ -67,14 +79,52 @@ main{
             margin-block-end: $margin-block-end;
         }
     }
-    .bg-grey-light{
-        background-color: $bg-colour-lighter;
-    }
+    
+    
 
 /*Fonctionnement*/
     .working{
-        height: 500px;
+        height: 550px;
         padding-left: 1.5rem;
+        padding-top: 2.5rem;
+        .padding-title{
+            padding-bottom: 2rem;
+        }
+        .working-bloc{
+            width: 90%;
+            height: 90px;
+            border: 2px solid transparent;
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: 0px 16px 20px -16px grey; 
+            margin-left: 1rem;
+            margin-bottom: 2rem;
+            &:hover{
+                background-color: #ede7f6;
+            }
+            .round-number{
+                width: 6%;
+                border: 1px solid transparent;
+                border-radius: 25px 25px 25px 25px;
+                background-color: $primary;
+                color: $text-colour-light;
+                margin-right: 1.5rem;
+                margin-left: -4.5rem;
+            }
+            .icon:hover{
+                color: $primary;
+            }
+            .margin-text-more{
+                margin-right: 1rem; 
+            }
+            .working-text{
+                font-family: $font-text;
+                margin-left: 2rem;
+                padding-right: 2rem;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+        }
     }
 }
 
