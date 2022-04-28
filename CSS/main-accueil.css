@@ -1,5 +1,10 @@
 @charset "UTF-8";
 /*Déclaration initiale*/
+@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
 * {
   box-sizing: border-box; }
 
@@ -410,8 +415,16 @@ header {
   font-size: 1.8rem;
   font-weight: bold; }
 
+.padding-title {
+  padding-bottom: 2rem;
+  padding-top: 3rem; }
+
 .bg-grey-light {
   background-color: #F7F9F9; }
+
+a {
+  text-decoration: none;
+  color: black; }
 
 /*BODY*/
 main {
@@ -419,7 +432,8 @@ main {
   font-family: "Roboto", "sans empattement";
   /*formulaire de recherche*/
   /* Présentation*/
-  /*Fonctionnement*/ }
+  /*Fonctionnement*/
+  /*Restaurants*/ }
   main .location-bar {
     height: 60px;
     box-shadow: inset -2px 4px 5px -4px grey;
@@ -449,10 +463,7 @@ main {
       margin-block-end: 0; }
   main .working {
     height: 550px;
-    padding-left: 1.5rem;
-    padding-top: 2.5rem; }
-    main .working .padding-title {
-      padding-bottom: 2rem; }
+    padding-left: 1.5rem; }
     main .working .working-bloc {
       width: 90%;
       height: 90px;
@@ -473,11 +484,74 @@ main {
         margin-left: -4.5rem; }
       main .working .working-bloc .icon:hover {
         color: #9356DC; }
-      main .working .working-bloc .margin-text-more {
-        margin-right: 1rem; }
       main .working .working-bloc .working-text {
         font-family: "Roboto", "sans empattement";
         margin-left: 2rem;
         padding-right: 2rem;
         font-weight: bold;
+        font-size: 20px; }
+      main .working .working-bloc .margin-text-more {
+        margin-right: 1rem; }
+  main .eatery {
+    height: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-bottom: 3rem; }
+    main .eatery .eatery-card {
+      width: 100%;
+      height: 300px;
+      box-shadow: 12px 12px 20px -16px grey;
+      border-radius: 20px 20px 20px 20px;
+      margin-bottom: 1.5rem;
+      /*
+            @keyframes progress-heart{
+                0% {
+                    transform: scaleX(0);
+                }
+                100% {
+                    transform: scaleY(1);
+                    background-color: $primary, $secondary;
+                }
+            }*/ }
+      main .eatery .eatery-card img {
+        width: 100%;
+        height: 220px;
+        border-radius: 20px 20px 0 0;
+        object-fit: cover; }
+      main .eatery .eatery-card .tag {
+        position: absolute;
+        left: 315px;
+        width: 20%;
+        height: 40px;
+        border: 2px solid transparent;
+        border-radius: 2px 2px 2px 2px;
+        background-color: #99E2D0;
+        color: #0a8f08;
+        font-weight: bold;
+        font-size: 18px; }
+      main .eatery .eatery-card .fa-heart {
+        position: absolute;
+        left: 360px;
+        cursor: pointer;
+        /*&:active{
+                    background-color: radial-gradient($primary, $secondary);
+                    & > .progress-heart{ 
+                        animation-name: 'progress-heart';
+                        animation-duration: 1000ms;
+                        animation-fill-mode: both;
+                    }
+                }*/ }
+      main .eatery .eatery-card h4 {
+        font-weight: bold;
+        font-size: 20px;
+        margin-block-end: 0;
+        margin-block-start: 0;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        padding-right: 80px; }
+      main .eatery .eatery-card .city {
+        margin-block-end: 0;
+        margin-block-start: 0;
+        padding-left: 1rem;
+        margin-bottom: 1rem;
         font-size: 20px; }
