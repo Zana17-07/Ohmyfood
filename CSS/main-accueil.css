@@ -1,10 +1,6 @@
 @charset "UTF-8";
 /*Déclaration initiale*/
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+
 * {
   box-sizing: border-box; }
 
@@ -320,6 +316,7 @@ template {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*Boutons Explorer et commander*/
 .btn {
   width: 55%;
   height: 50px;
@@ -330,6 +327,28 @@ template {
   border-radius: 25px 25px 25px 25px;
   box-shadow: 0px 16px 12px -12px grey;
   cursor: pointer; }
+
+/*Animations check menu*/
+.btn-check {
+  display: none; }
+  .btn-check:hover {
+    display: block;
+    width: 80px;
+    height: 80px;
+    background-color: #99E2D0;
+    border: 1px solid #99E2D0;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer; }
+  .btn-check .fa-circle-check {
+    display: none; }
+    .btn-check .fa-circle-check:hover {
+      display: inline;
+      position: absolute;
+      left: 2.5rem;
+      bottom: 2.5rem;
+      color: #99E2D0;
+      background-color: #fff;
+      cursor: pointer; }
 
 /*color*/
 /*background-color fonds*/
@@ -384,12 +403,101 @@ header {
       margin-right: 5rem;
       margin-left: 1.5rem;
       cursor: pointer; }
-  header h1 {
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", "cursive";
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem; }
+
+/*color*/
+/*background-color fonds*/
+/*Police titres ohmyfood et menus*/
+/*Police texte*/
+/*marge*/
+/* padding*/
+/*color*/
+/*background-color fonds*/
+/*Police titres ohmyfood et menus*/
+/*Police texte*/
+/*marge*/
+/* padding*/
+header {
+  width: 100%; }
+  header div {
     display: flex;
-    justify-content: center;
-    font-family: "Shrikhand", "cursive";
-    margin-block-end: 0;
-    margin-bottom: 0.5rem; }
+    align-items: center; }
+    header div a i {
+      margin-right: 5rem;
+      margin-left: 1.5rem;
+      cursor: pointer; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", "cursive";
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem; }
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem; }
+
+.align-center {
+  display: flex;
+  justify-content: center; }
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.h3-menu {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: 12%;
+  font-weight: normal;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #99E2D0; }
+
+img {
+  width: 100%;
+  height: 300px; }
+
+.eatery-section {
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+  border-radius: 50px 50px 0 0; }
+  .eatery-section .eatery-card-menu {
+    width: 105%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 12px 12px 20px -16px grey;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+    .eatery-section .eatery-card-menu:hover {
+      border-radius: 20px 0 0 20px;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .eatery-section .eatery-card-menu .eatery-text-menu {
+      font-size: 18px;
+      margin: 0; }
+    .eatery-section .eatery-card-menu .eatery-price {
+      font-weight: bold;
+      font-size: 18px;
+      margin-block-end: 0;
+      margin-block-start: 0; }
 
 /*color*/
 /*background-color fonds*/
@@ -415,9 +523,25 @@ header {
   font-size: 1.8rem;
   font-weight: bold; }
 
+h4 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-right: 80px; }
+
 .padding-title {
   padding-bottom: 2rem;
-  padding-top: 3rem; }
+  padding-top: 2.5rem; }
+
+.eatery-text {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-size: 20px; }
 
 .bg-grey-light {
   background-color: #F7F9F9; }
@@ -504,6 +628,8 @@ main {
       border-radius: 20px 20px 20px 20px;
       margin-bottom: 1.5rem;
       /*
+            
+            /*
             @keyframes progress-heart{
                 0% {
                     transform: scaleX(0);
@@ -533,6 +659,13 @@ main {
         position: absolute;
         left: 360px;
         cursor: pointer;
+        /*
+                background-color: #fff;
+                transition: background-color 2s, transform 2s;
+                &:active{
+                    background-color: radial-gradient($primary, $secondary); 
+                } */
+        /*ou*/
         /*&:active{
                     background-color: radial-gradient($primary, $secondary);
                     & > .progress-heart{ 
@@ -541,17 +674,3 @@ main {
                         animation-fill-mode: both;
                     }
                 }*/ }
-      main .eatery .eatery-card h4 {
-        font-weight: bold;
-        font-size: 20px;
-        margin-block-end: 0;
-        margin-block-start: 0;
-        padding-left: 1rem;
-        padding-top: 1rem;
-        padding-right: 80px; }
-      main .eatery .eatery-card .city {
-        margin-block-end: 0;
-        margin-block-start: 0;
-        padding-left: 1rem;
-        margin-bottom: 1rem;
-        font-size: 20px; }

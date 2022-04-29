@@ -1,0 +1,69 @@
+@import 'variables';
+@import 'header';
+
+.flexbetween{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1.5rem;
+}
+
+.align-center{
+    display: flex;
+    justify-content: center;
+}
+
+.flex-end{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.h3-menu{
+    margin-block-end: $margin-block-end;
+    margin-block-start: $margin-block-start;
+    width: 12%;
+    font-weight: normal;
+    padding-bottom: 5px;
+    border-bottom: 5px solid $tertiary;
+}
+
+img{
+    width: 100%;
+    height: 300px; 
+}
+
+.eatery-section{
+    width: 100%;
+    position: relative;
+    bottom: 60px;
+    border-radius: 50px 50px 0 0;
+    .eatery-card-menu{
+        width: 105%;
+        height: 80px;
+        background-color: #fff;
+        box-shadow: 12px 12px 20px -16px grey;
+        border-radius: 20px 20px 20px 20px;
+        margin-right: -0.5rem;
+        margin-left: -0.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        &:hover{
+            border-radius: 20px 0 0 20px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .eatery-text-menu{
+            font-size: 18px;
+            margin: 0;
+        }
+        .eatery-price{
+            font-weight: bold;
+            font-size: 18px;
+            margin-block-end: $margin-block-end;
+            margin-block-start: $margin-block-start;
+        }
+    }
+}
+
+

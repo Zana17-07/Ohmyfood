@@ -11,13 +11,15 @@ header{
             cursor: pointer;   
         }
     }
-    h1{
-        display: flex;
-        justify-content: center;
-        font-family: $font-logo;
-        margin-block-end: $margin-block-end; 
-        margin-bottom: $margin-bottom; 
-    }
+    
 }
 
-
+h1{
+    display: flex;
+    justify-content: center;
+    font-family: $font-logo;
+    margin-block-end: $margin-block-end; 
+    margin-block-start: $margin-block-start;
+    padding-bottom: $margin-bottom;
+    padding-top: 1rem; 
+}
