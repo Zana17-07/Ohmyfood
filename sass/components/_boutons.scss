@@ -13,10 +13,12 @@
     cursor: pointer;
 }
 
+
 /*Animations check menu*/
 .btn-check{
     display: none;
-    &:hover{
+    /*NE COMPREND PAS LES LIGNES = ACTIVE*/
+    &:active{
         display: block;
         width: 80px;
         height: 80px;
@@ -24,16 +26,15 @@
         border: 1px solid $tertiary;
         border-radius: 0 20px 20px 0;
         cursor: pointer;
-    }
+        }
     .fa-circle-check{
         display: none;
-        &:hover{
-        display: inline;
+        &:active{
+        display: block;
         position: absolute;
-        left: 2.5rem;
-        bottom: 2.5rem;
+        right: 3rem;
         color: $tertiary;
-        background-color: #fff; 
+        background: #fff; 
         cursor: pointer;
         }
     }
