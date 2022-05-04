@@ -557,6 +557,14 @@ a {
   color: black; }
 
 /*BODY*/
+.loading-page {
+  background-color: transparent;
+  opacity: 1;
+  transition: all 3s; }
+
+.fa-spinner-third {
+  color: #9356DC, #FF79DA, #99E2D0; }
+
 main {
   width: 100%;
   font-family: "Roboto", "sans empattement";
@@ -654,13 +662,6 @@ main {
         left: 360px;
         cursor: pointer; }
         main .eatery .eatery-card .fa-heart:active {
-          display: none; }
-          main .eatery .eatery-card .fa-heart:active .fa-heart-solid {
-            display: none;
-            position: absolute;
-            left: 360px;
-            background-color: linear-gradient(#9356DC, #FF79DA);
-            transition: transform 330ms ease-in-out;
-            cursor: pointer; }
-            main .eatery .eatery-card .fa-heart:active .fa-heart-solid:active {
-              display: block; }
+          font-weight: bold;
+          color: #9356DC;
+          transition: color 1s ease-out; }

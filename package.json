@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass --include-path sass/base --include-path sass/components --include-path sass/layout --include-path sass/utils --watch sass/ -o CSS/"
+    "scss": "node-sass --include-path sass/base --include-path sass/components --include-path sass/layout --include-path sass/utils --watch sass/ -o CSS/",
+    "prefix": "postcss ./CSS/main-accueil.css --use autoprefixer -d .CSS/prefixed/"
   },
   "repository": {
     "type": "git",
@@ -14,6 +15,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/Zana17-07/ohmyfood/issues"
   },
