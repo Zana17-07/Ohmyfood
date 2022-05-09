@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*Déclaration initiale*/
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
-@import url("https://fonts.googleapis.com/css2? family= Roboto & family= Shrikhand & display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -326,7 +326,7 @@ template {
 .btn {
   width: 55%;
   height: 50px;
-  background: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
   font-size: 1.2rem;
   border: 3px;
@@ -335,26 +335,24 @@ template {
   cursor: pointer; }
 
 /*Animations check menu*/
-.btn-check {
-  display: none;
-  /*NE COMPREND PAS LES LIGNES = ACTIVE*/ }
-  .btn-check:active {
-    display: block;
-    width: 80px;
-    height: 80px;
-    background-color: #99E2D0;
-    border: 1px solid #99E2D0;
-    border-radius: 0 20px 20px 0;
-    cursor: pointer; }
-  .btn-check .fa-circle-check {
-    display: none; }
-    .btn-check .fa-circle-check:active {
-      display: block;
-      position: absolute;
-      right: 3rem;
-      color: #99E2D0;
-      background: #fff;
-      cursor: pointer; }
+.btn-check:active {
+  display: inline-block;
+  position: absolute;
+  left: 360px;
+  width: 80px;
+  height: 80px;
+  background-color: #99e2d0;
+  border: 1px solid #99e2d0;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer; }
+
+.fa-circle-check:active {
+  display: flex;
+  position: absolute;
+  right: 3rem;
+  color: #99e2d0;
+  background: #fff;
+  cursor: pointer; }
 
 /*color*/
 /*background-color fonds*/
@@ -375,7 +373,7 @@ footer {
     font-weight: normal;
     margin-block-start: 0; }
   footer div {
-    font-family: "Roboto", "sans empattement"; }
+    font-family: "Roboto", sans-serif; }
     footer div div {
       display: flex;
       align-items: center; }
@@ -471,7 +469,7 @@ h1 {
   width: 12%;
   font-weight: normal;
   padding-bottom: 5px;
-  border-bottom: 5px solid #99E2D0; }
+  border-bottom: 5px solid #99e2d0; }
 
 img {
   width: 100%;
@@ -481,7 +479,8 @@ img {
   width: 100%;
   position: relative;
   bottom: 60px;
-  border-radius: 50px 50px 0 0; }
+  border-radius: 50px 50px 0 0;
+  /*Animations check menu*/ }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -491,9 +490,10 @@ img {
     margin-right: -0.5rem;
     margin-left: -0.5rem;
     margin-top: 1rem;
-    margin-bottom: 1rem; }
-    .eatery-section .eatery-card-menu:hover {
-      border-radius: 20px 0 0 20px;
+    margin-bottom: 1rem;
+    cursor: pointer; }
+    .eatery-section .eatery-card-menu:active {
+      border-radius: 0 20px 20px 0;
       overflow: hidden;
       text-overflow: ellipsis; }
     .eatery-section .eatery-card-menu .eatery-text-menu {
@@ -504,6 +504,22 @@ img {
       font-size: 18px;
       margin-block-end: 0;
       margin-block-start: 0; }
+  .eatery-section .fa-check {
+    position: relative;
+    left: 340px;
+    bottom: 66px;
+    color: #99e2d0;
+    cursor: pointer;
+    width: 80px;
+    height: 80px;
+    background-color: #99e2d0;
+    border: 1px solid #99e2d0;
+    border-radius: 0 20px 20px 0; }
+  .eatery-section .fa-check-decoration {
+    border: 5px solid #FFF;
+    border-radius: 25px 25px 25px 25px;
+    background-color: #FFF;
+    color: #99e2d0; }
 
 /*color*/
 /*background-color fonds*/
@@ -550,7 +566,7 @@ h4 {
   font-size: 20px; }
 
 .bg-grey-light {
-  background-color: #F7F9F9; }
+  background-color: #f7f9f9; }
 
 a {
   text-decoration: none;
@@ -574,10 +590,10 @@ body .loader-quart {
     width: 50px;
     height: 50px;
     border: 6px solid transparent;
-    border-top-color: #9356DC;
-    border-bottom-color: #99E2D0;
-    border-right-color: #FF79DA;
-    border-left-color: #FF79DA;
+    border-top-color: #9356dc;
+    border-bottom-color: #99e2d0;
+    border-right-color: #ff79da;
+    border-left-color: #ff79da;
     animation: spin 2s linear infinite; }
 
 body .spin-out {
@@ -593,7 +609,7 @@ body .spin-out {
 
 main {
   width: 100%;
-  font-family: "Roboto", "sans empattement";
+  font-family: "Roboto", sans-serif;
   /*formulaire de recherche*/
   /* Présentation*/
   /*Fonctionnement*/
@@ -642,14 +658,14 @@ main {
         width: 6%;
         border: 1px solid transparent;
         border-radius: 25px 25px 25px 25px;
-        background-color: #9356DC;
+        background-color: #9356dc;
         color: #fff;
         margin-right: 1.5rem;
         margin-left: -4.5rem; }
       main .working .working-bloc .icon:hover {
-        color: #9356DC; }
+        color: #9356dc; }
       main .working .working-bloc .working-text {
-        font-family: "Roboto", "sans empattement";
+        font-family: "Roboto", sans-serif;
         margin-left: 2rem;
         padding-right: 2rem;
         font-weight: bold;
@@ -679,7 +695,7 @@ main {
         height: 40px;
         border: 2px solid transparent;
         border-radius: 2px 2px 2px 2px;
-        background-color: #99E2D0;
+        background-color: #99e2d0;
         color: #0a8f08;
         font-weight: bold;
         font-size: 18px; }
@@ -689,5 +705,5 @@ main {
         cursor: pointer; }
         main .eatery .eatery-card .fa-heart:active {
           font-weight: bold;
-          color: #9356DC;
+          color: #9356dc;
           transition: color 330ms ease-out; }

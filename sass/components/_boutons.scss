@@ -15,29 +15,25 @@
 
 
 /*Animations check menu*/
-.btn-check{
-    display: none;
-    /*NE COMPREND PAS LES LIGNES = ACTIVE*/
-    &:active{
-        display: block;
-        width: 80px;
-        height: 80px;
-        background-color: $tertiary;
-        border: 1px solid $tertiary;
-        border-radius: 0 20px 20px 0;
-        cursor: pointer;
-    }
-    .fa-circle-check{
-        display: none;
-        &:active{
-        display: block;
-        position: absolute;
-        right: 3rem;
-        color: $tertiary;
-        background: #fff; 
-        cursor: pointer;
-        }
-    }
+.btn-check:active{
+    display: inline-block;
+    position: absolute;
+    left: 360px;
+    width: 80px;
+    height: 80px;
+    background-color: $tertiary;
+    border: 1px solid $tertiary;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.fa-circle-check:active{
+    display: flex;
+    position: absolute;
+    right: 3rem;
+    color: $tertiary;
+    background: #fff; 
+    cursor: pointer;
 }
 
 

@@ -48,8 +48,9 @@ img{
         margin-left: -0.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        &:hover{
-            border-radius: 20px 0 0 20px;
+        cursor: pointer;
+        &:active{
+            border-radius: 0 20px 20px 0;
             overflow: hidden;
             text-overflow: ellipsis;
         }
@@ -64,4 +65,24 @@ img{
             margin-block-start: $margin-block-start;
         }
     }
+
+    /*Animations check menu*/
+    .fa-check{
+        position: relative;
+        left: 340px;
+        bottom: 66px;
+        color: $tertiary; 
+        cursor: pointer; 
+        width: 80px;
+        height: 80px;
+        background-color: $tertiary;
+        border: 1px solid $tertiary;
+        border-radius: 0 20px 20px 0;   
+    }
+    .fa-check-decoration{
+        border: 5px solid #FFF;
+        border-radius: 25px 25px 25px 25px;
+        background-color: #FFF;
+        color: $tertiary;
+    } 
 }
