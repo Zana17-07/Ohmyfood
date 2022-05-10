@@ -60,14 +60,15 @@ a{
 /*BODY*/
 body{
     .loader-quart{
-        position: absolute;
+        position: relative;
+        top: 400px;
         width: 100%;
         height: 100%;
         background-size: cover;
         background-color: black;
         &:after{
             content: "";
-            position: absolute;
+            position: fixed;
             top: -6;
             left: -6;
             bottom: -6;
@@ -171,7 +172,7 @@ main{
                 background-color: $primary;
                 color: $text-colour-light;
                 margin-right: 1.5rem;
-                margin-left: -4.5rem;
+                margin-left: -3rem;
             }
             .icon:hover{
                 color: $primary;
@@ -223,17 +224,27 @@ main{
                 position: absolute;
                 left: 360px;
                 cursor:pointer;  
-                &:active{
+                &:after{
+                    transform-origin: left;
                     font-weight: bold;
-                    color: $primary;
-                    transition: color 330ms ease-out;
+                    background: radial-gradient($secondary, $primary);
+                    transition: progress-heart 1000ms ease-in-out;
+                    animation-fill-mode: both;
                 } 
             }
         }
     }
 }
 
-
+@keyframes progress-heart{
+    to{
+        transform: scaleX(0);
+        opacity: .1;
+    }
+    from{
+        transform: scaleX(1);
+    }
+}
 
 
 

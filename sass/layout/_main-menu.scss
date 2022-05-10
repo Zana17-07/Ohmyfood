@@ -67,22 +67,18 @@ img{
     }
 
     /*Animations check menu*/
-    .fa-check{
+    .fa-circle-check{
         position: relative;
         left: 340px;
-        bottom: 66px;
-        color: $tertiary; 
+        bottom: 59px;
+        color: #FFF; 
         cursor: pointer; 
         width: 80px;
         height: 80px;
         background-color: $tertiary;
         border: 1px solid $tertiary;
-        border-radius: 0 20px 20px 0;   
+        border-radius: 0 20px 20px 0; 
+         
     }
-    .fa-check-decoration{
-        border: 5px solid #FFF;
-        border-radius: 25px 25px 25px 25px;
-        background-color: #FFF;
-        color: $tertiary;
-    } 
+    
 }

@@ -504,22 +504,17 @@ img {
       font-size: 18px;
       margin-block-end: 0;
       margin-block-start: 0; }
-  .eatery-section .fa-check {
+  .eatery-section .fa-circle-check {
     position: relative;
     left: 340px;
-    bottom: 66px;
-    color: #99e2d0;
+    bottom: 59px;
+    color: #FFF;
     cursor: pointer;
     width: 80px;
     height: 80px;
     background-color: #99e2d0;
     border: 1px solid #99e2d0;
     border-radius: 0 20px 20px 0; }
-  .eatery-section .fa-check-decoration {
-    border: 5px solid #FFF;
-    border-radius: 25px 25px 25px 25px;
-    background-color: #FFF;
-    color: #99e2d0; }
 
 /*color*/
 /*background-color fonds*/
@@ -574,14 +569,15 @@ a {
 
 /*BODY*/
 body .loader-quart {
-  position: absolute;
+  position: relative;
+  top: 400px;
   width: 100%;
   height: 100%;
   background-size: cover;
   background-color: black; }
   body .loader-quart:after {
     content: "";
-    position: absolute;
+    position: fixed;
     top: -6;
     left: -6;
     bottom: -6;
@@ -661,7 +657,7 @@ main {
         background-color: #9356dc;
         color: #fff;
         margin-right: 1.5rem;
-        margin-left: -4.5rem; }
+        margin-left: -3rem; }
       main .working .working-bloc .icon:hover {
         color: #9356dc; }
       main .working .working-bloc .working-text {
@@ -703,7 +699,16 @@ main {
         position: absolute;
         left: 360px;
         cursor: pointer; }
-        main .eatery .eatery-card .fa-heart:active {
+        main .eatery .eatery-card .fa-heart:after {
+          transform-origin: left;
           font-weight: bold;
-          color: #9356dc;
-          transition: color 330ms ease-out; }
+          background: radial-gradient(#ff79da, #9356dc);
+          transition: progress-heart 1000ms ease-in-out;
+          animation-fill-mode: both; }
+
+@keyframes progress-heart {
+  to {
+    transform: scaleX(0);
+    opacity: .1; }
+  from {
+    transform: scaleX(1); } }
