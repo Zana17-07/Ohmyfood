@@ -4,7 +4,7 @@
 @import 'footer';
 @import 'header';
 @import 'main-menu';
-@import 'fonctions';
+@import 'keyframes';
 @import 'mixins';
 @import 'variables';
 
@@ -69,10 +69,6 @@ body{
         &:after{
             content: "";
             position: fixed;
-            top: -6;
-            left: -6;
-            bottom: -6;
-            right: -6;
             border-radius: 50px;
             width: 50px;
             height: 50px;
@@ -223,28 +219,20 @@ main{
             .fa-heart{
                 position: absolute;
                 left: 360px;
-                cursor:pointer;  
-                &:after{
-                    transform-origin: left;
-                    font-weight: bold;
-                    background: radial-gradient($secondary, $primary);
-                    transition: progress-heart 1000ms ease-in-out;
-                    animation-fill-mode: both;
-                } 
-            }
+                border: none;
+                cursor:pointer;
+                &:active{
+                    background-clip: icon;
+                    background-image: linear-gradient($primary, $secondary); 
+                    animation: progress-heart .5s ease-in-out;
+                    /* ou font-weight: bold;
+                    color: $primary;*/ 
+                }
+            } 
         }
     }
 }
 
-@keyframes progress-heart{
-    to{
-        transform: scaleX(0);
-        opacity: .1;
-    }
-    from{
-        transform: scaleX(1);
-    }
-}
 
 
 

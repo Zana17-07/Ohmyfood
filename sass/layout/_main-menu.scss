@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'header';
+@import 'keyframes';
 
 .flexbetween{
     display: flex;
@@ -48,11 +49,26 @@ img{
         margin-left: -0.5rem;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
         cursor: pointer;
         &:active{
-            border-radius: 0 20px 20px 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            .fa-circle-check{
+                position: relative;
+                left: 435px;
+                bottom: 59px; 
+                cursor: pointer; 
+                width: 80px;
+                height: 80px;
+                background-color: $tertiary;
+                border: 1px solid $tertiary;
+                border-radius: 0 20px 20px 0;
+                animation: appear 2s;
+                &:before{ 
+                    color: #FFF;
+                    animation: turn 500ms linear infinite both;
+                } 
+            }
         }
         .eatery-text-menu{
             font-size: 18px;
@@ -63,22 +79,8 @@ img{
             font-size: 18px;
             margin-block-end: $margin-block-end;
             margin-block-start: $margin-block-start;
-        }
-    }
-
-    /*Animations check menu*/
-    .fa-circle-check{
-        position: relative;
-        left: 340px;
-        bottom: 59px;
-        color: #FFF; 
-        cursor: pointer; 
-        width: 80px;
-        height: 80px;
-        background-color: $tertiary;
-        border: 1px solid $tertiary;
-        border-radius: 0 20px 20px 0; 
-         
-    }
-    
+        }   
+    }      
 }
+
+
