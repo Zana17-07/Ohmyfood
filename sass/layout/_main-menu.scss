@@ -1,6 +1,5 @@
 @import 'variables';
 @import 'header';
-@import 'keyframes';
 
 .flexbetween{
     display: flex;
@@ -23,10 +22,10 @@
 .h3-menu{
     margin-block-end: $margin-block-end;
     margin-block-start: $margin-block-start;
-    width: 12%;
+    width: 13%;
     font-weight: normal;
     padding-bottom: 5px;
-    border-bottom: 5px solid $tertiary;
+    border-bottom: 4px solid $tertiary;
 }
 
 img{
@@ -34,53 +33,60 @@ img{
     height: 300px; 
 }
 
+.padding-bloc-menu{
+    padding-bottom: 2rem;
+}
+
 .eatery-section{
     width: 100%;
     position: relative;
     bottom: 60px;
     border-radius: 50px 50px 0 0;
-    .eatery-card-menu{
-        width: 105%;
-        height: 80px;
-        background-color: #fff;
-        box-shadow: 12px 12px 20px -16px grey;
-        border-radius: 20px 20px 20px 20px;
-        margin-right: -0.5rem;
-        margin-left: -0.5rem;
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        cursor: pointer;
-        &:active{
-            .fa-circle-check{
-                position: relative;
-                left: 435px;
-                bottom: 59px; 
-                cursor: pointer; 
-                width: 80px;
-                height: 80px;
-                background-color: $tertiary;
-                border: 1px solid $tertiary;
-                border-radius: 0 20px 20px 0;
-                animation: appear 2s;
-                &:before{ 
-                    color: #FFF;
-                    animation: turn 500ms linear infinite both;
-                } 
+    .scrolling-cards-menu{
+        animation: scrolling 1s;
+    }
+        .eatery-card-menu{
+            width: 105%;
+            height: 80px;
+            background-color: #fff;
+            box-shadow: 12px 12px 20px -16px grey;
+            border-radius: 20px 20px 20px 20px;
+            margin-right: -0.5rem;
+            margin-left: -0.5rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            cursor: pointer;
+            &:active{
+                .fa-circle-check{
+                    position: relative;
+                    left: 438px;
+                    bottom: 59px; 
+                    cursor: pointer; 
+                    width: 80px;
+                    height: 80px;
+                    background-color: $tertiary;
+                    border: 1px solid $tertiary;
+                    border-radius: 0 20px 20px 0;
+                    animation: appear 1s;
+                    &:before{ 
+                        color: #FFF;
+                        animation: turn 250ms linear 3;
+                    } 
+                }
             }
-        }
-        .eatery-text-menu{
-            font-size: 18px;
-            margin: 0;
-        }
-        .eatery-price{
-            font-weight: bold;
-            font-size: 18px;
-            margin-block-end: $margin-block-end;
-            margin-block-start: $margin-block-start;
-        }   
-    }      
+            .eatery-text-menu{
+                font-size: 18px;
+                margin: 0;
+            }
+            .eatery-price{
+                font-weight: bold;
+                font-size: 18px;
+                margin-block-end: $margin-block-end;
+                margin-block-start: $margin-block-start;
+            }   
+        } 
 }
 
 

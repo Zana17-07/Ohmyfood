@@ -1,0 +1,54 @@
+@import 'boutons';
+@import 'main-menu';
+
+/*loader quart de cercle*/
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes progress-heart{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes turn{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes appear{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-120%);
+    }
+}
+
+@keyframes scrolling{
+    0%{
+        opacity: 0;   
+    }
+    10%{
+        transform: translateY(0);   
+    }
+    100%{
+        transform: translateY(3%);
+    }
+}

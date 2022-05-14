@@ -7,6 +7,9 @@
 @import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2? family=Roboto&family=Shrikhand&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -459,20 +462,25 @@ h1 {
 .h3-menu {
   margin-block-end: 0;
   margin-block-start: 0;
-  width: 12%;
+  width: 13%;
   font-weight: normal;
   padding-bottom: 5px;
-  border-bottom: 5px solid #99e2d0; }
+  border-bottom: 4px solid #99e2d0; }
 
 img {
   width: 100%;
   height: 300px; }
+
+.padding-bloc-menu {
+  padding-bottom: 2rem; }
 
 .eatery-section {
   width: 100%;
   position: relative;
   bottom: 60px;
   border-radius: 50px 50px 0 0; }
+  .eatery-section .scrolling-cards-menu {
+    animation: scrolling 1s; }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -488,7 +496,7 @@ img {
     cursor: pointer; }
     .eatery-section .eatery-card-menu:active .fa-circle-check {
       position: relative;
-      left: 435px;
+      left: 438px;
       bottom: 59px;
       cursor: pointer;
       width: 80px;
@@ -496,10 +504,10 @@ img {
       background-color: #99e2d0;
       border: 1px solid #99e2d0;
       border-radius: 0 20px 20px 0;
-      animation: appear 2s; }
+      animation: appear 1s; }
       .eatery-section .eatery-card-menu:active .fa-circle-check:before {
         color: #FFF;
-        animation: turn 500ms linear infinite both; }
+        animation: turn 250ms linear 3; }
     .eatery-section .eatery-card-menu .eatery-text-menu {
       font-size: 18px;
       margin: 0; }
@@ -508,6 +516,176 @@ img {
       font-size: 18px;
       margin-block-end: 0;
       margin-block-start: 0; }
+
+/*color*/
+/*background-color fonds*/
+/*Police titres ohmyfood et menus*/
+/*Police texte*/
+/*marge*/
+/* padding*/
+/*Boutons Explorer et commander*/
+.btn {
+  width: 55%;
+  height: 50px;
+  background: linear-gradient(#ff79da, #9356dc);
+  color: #fff;
+  font-size: 1.1rem;
+  border: 3px;
+  border-radius: 25px 25px 25px 25px;
+  box-shadow: 0px 16px 12px -12px grey;
+  cursor: pointer; }
+
+/*Boutons J'aime*/
+.fa-heart {
+  position: absolute;
+  left: 360px;
+  border: none;
+  cursor: pointer; }
+  .fa-heart:active {
+    background-clip: icon;
+    background-image: linear-gradient(#9356dc, #ff79da);
+    animation: progress-heart .5s ease-in-out;
+    /* ou font-weight: bold;
+        color: $primary;*/ }
+
+/*color*/
+/*background-color fonds*/
+/*Police titres ohmyfood et menus*/
+/*Police texte*/
+/*marge*/
+/* padding*/
+/*color*/
+/*background-color fonds*/
+/*Police titres ohmyfood et menus*/
+/*Police texte*/
+/*marge*/
+/* padding*/
+header {
+  width: 100%; }
+  header div {
+    display: flex;
+    align-items: center; }
+    header div a i {
+      margin-right: 5rem;
+      margin-left: 1.5rem;
+      cursor: pointer; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Shrikhand", "cursive";
+  margin-block-end: 0;
+  margin-block-start: 0;
+  padding-bottom: 0.5rem;
+  padding-top: 1rem; }
+
+.flexbetween {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem; }
+
+.align-center {
+  display: flex;
+  justify-content: center; }
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.h3-menu {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  width: 13%;
+  font-weight: normal;
+  padding-bottom: 5px;
+  border-bottom: 4px solid #99e2d0; }
+
+img {
+  width: 100%;
+  height: 300px; }
+
+.padding-bloc-menu {
+  padding-bottom: 2rem; }
+
+.eatery-section {
+  width: 100%;
+  position: relative;
+  bottom: 60px;
+  border-radius: 50px 50px 0 0; }
+  .eatery-section .scrolling-cards-menu {
+    animation: scrolling 1s; }
+  .eatery-section .eatery-card-menu {
+    width: 105%;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 12px 12px 20px -16px grey;
+    border-radius: 20px 20px 20px 20px;
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer; }
+    .eatery-section .eatery-card-menu:active .fa-circle-check {
+      position: relative;
+      left: 438px;
+      bottom: 59px;
+      cursor: pointer;
+      width: 80px;
+      height: 80px;
+      background-color: #99e2d0;
+      border: 1px solid #99e2d0;
+      border-radius: 0 20px 20px 0;
+      animation: appear 1s; }
+      .eatery-section .eatery-card-menu:active .fa-circle-check:before {
+        color: #FFF;
+        animation: turn 250ms linear 3; }
+    .eatery-section .eatery-card-menu .eatery-text-menu {
+      font-size: 18px;
+      margin: 0; }
+    .eatery-section .eatery-card-menu .eatery-price {
+      font-weight: bold;
+      font-size: 18px;
+      margin-block-end: 0;
+      margin-block-start: 0; }
+
+/*loader quart de cercle*/
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes progress-heart {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  100% {
+    transform: translateY(1);
+    opacity: 1; } }
+
+@keyframes turn {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+@keyframes appear {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-120%); } }
+
+@keyframes scrolling {
+  0% {
+    opacity: 0; }
+  10% {
+    transform: translateY(0); }
+  100% {
+    transform: translateY(3%); } }
 
 /*color*/
 /*background-color fonds*/
