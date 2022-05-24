@@ -32,8 +32,9 @@ h4{
     padding-left: 1rem;
     padding-top: 1rem;
     padding-right: 80px;
+    text-overflow: ellipsis;
     overflow: hidden;
-    text-overflow: ellipsis; 
+     
 }
 
 .padding-title{
@@ -47,8 +48,9 @@ h4{
     padding-left: 1rem;
     margin-bottom: 1rem;
     font-size: 18px;
-    overflow: hidden;
     text-overflow: ellipsis; 
+    overflow: hidden;
+    
 }
 
 .bg-grey-light{
@@ -62,30 +64,41 @@ a{
 
 /*BODY*/
 body{
-    .loader-quart{
-        position: relative;
-        top: 400px;
+    .loader-title{
+        animation: intro 5s ease-in forwards;
+    }
+    .loader-container{
         width: 100%;
         height: 100%;
-        background-size: cover;
-        background-color: black;
-        &:after{
-            content: "";
-            position: fixed;
-            border-radius: 50px;
-            width: 50px;
-            height: 50px;
-            border: 6px solid transparent;
-            border-top-color: $primary;
-            border-bottom-color: $tertiary;
-            border-right-color: $secondary;
-            border-left-color: $secondary;
-            animation: spin 2s linear infinite;
-        }
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        z-index: -1000;
     }
-    .spin-out{
-        opacity: 0;
-        transition: opacity 3s ease-out;
+    .loader{
+        width: 350px;
+        height: 350px;
+        border-radius: 50px;
+        animation: loader 4s linear 1s forwards;
+    }
+    .loader div{
+        box-sizing: border-box;
+        position: absolute;
+        width: 350px;
+        height: 350px;
+        border: 10px solid transparent;
+        border-top-color: #ad60f5;
+        border-radius: 50%;
+        animation: spinnerOne 3s cubic-bezier(0.34, 0.26, 0.73, 0.93) infinite both;
+    }
+    .loader div:nth-child(2) {
+        border: 10px solid transparent;
+        border-bottom-color: #ff79da;
+        animation: spinnerOne 3s cubic-bezier(0.34, 0.26, 0.73, 0.93) infinite both;
+    }
+    .main-content{
+        animation: page cubic-bezier(0.34, 0.26, 0.73, 0.93) 6s;
     }
 }
 
@@ -150,7 +163,6 @@ main{
             @media screen and (min-width:768px){   
                 width: auto;
                 display: flex;
-                justify-content: space-around; 
             }
             .working-bloc{
                 width: 90%;
@@ -221,7 +233,9 @@ main{
         .responsive{
             @media screen and (min-width:768px){ 
                 display: flex;
-                justify-content: space-around;  
+                flex-wrap: wrap;
+                width: 420px;
+                  
             }    
             .eatery-card{
                 width: 100%;
@@ -230,9 +244,7 @@ main{
                 border-radius: 20px 20px 20px 20px;
                 margin-bottom: 1.5rem;
                 @media screen and (min-width:768px){ 
-                    display: inline-block;
-                    flex-direction: column;
-                    flex-wrap: wrap;
+                    display: inline;
                     margin-right: 20px;
                 } 
                 img{

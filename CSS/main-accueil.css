@@ -514,6 +514,7 @@ img {
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         display: inline-block;
+        width: 450px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -670,6 +671,7 @@ img {
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         display: inline-block;
+        width: 450px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -696,13 +698,88 @@ img {
       margin-block-end: 0;
       margin-block-start: 0; }
 
-/*loader quart de cercle*/
-@keyframes spin {
+/*loader*/
+@keyframes intro {
   0% {
-    transform: rotate(0deg); }
+    opacity: 1;
+    color: #ad60f5; }
+  20% {
+    opacity: 0; }
+  40% {
+    opacity: 1;
+    color: #ff79da; }
+  60% {
+    opacity: 0; }
+  80% {
+    opacity: 0.5; }
+  98% {
+    opacity: 0.25; }
   100% {
-    transform: rotate(360deg); } }
+    opacity: 0;
+    color: #ad60f5;
+    bottom: -500px; } }
 
+@keyframes loader {
+  0% {
+    opacity: 1; }
+  20% {
+    opacity: 0.8; }
+  40% {
+    opacity: 0.6; }
+  60% {
+    opacity: 0.4; }
+  80% {
+    opacity: 0.2; }
+  100% {
+    opacity: 0;
+    bottom: -5000px; } }
+
+@keyframes spinnerOne {
+  0% {
+    transform: rotate(0);
+    border-width: 1px;
+    border-color: #ad60f5;
+    opacity: 1; }
+  25% {
+    transform: rotate(180deg);
+    border-width: 8px;
+    border-color: #ff79da;
+    opacity: 0.5; }
+  50% {
+    transform: rotate(360deg);
+    border-width: 1px;
+    border-color: #99e2d0;
+    opacity: 0.75; }
+  75% {
+    transform: rotate(360deg);
+    border-width: 8px;
+    border-color: #ff79da;
+    opacity: 1; }
+  100% {
+    transform: rotate(180deg);
+    border-width: 1px;
+    border-color: #ad60f5;
+    opacity: 1;
+    bottom: -4000px; } }
+
+@keyframes page {
+  0% {
+    opacity: 0;
+    bottom: -500px; }
+  25% {
+    opacity: 0;
+    bottom: -4000px; }
+  50% {
+    opacity: 0;
+    bottom: -5000px; }
+  75% {
+    opacity: 0.75;
+    bottom: -5000px; }
+  100% {
+    opacity: 1;
+    top: 4000px; } }
+
+/*Heart*/
 @keyframes wheelHueColor {
   0% {
     color: #c32283; }
@@ -711,6 +788,7 @@ img {
   100% {
     color: #8b29a3; } }
 
+/*Appear main*/
 @keyframes turn {
   0% {
     transform: rotate(0deg); }
@@ -723,6 +801,7 @@ img {
   100% {
     transform: translateX(-120%); } }
 
+/*Scroll main*/
 @keyframes scrolling {
   0% {
     opacity: 0; }
@@ -765,8 +844,8 @@ h4 {
   padding-left: 1rem;
   padding-top: 1rem;
   padding-right: 80px;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  overflow: hidden; }
 
 .padding-title {
   padding-bottom: 2rem;
@@ -778,8 +857,8 @@ h4 {
   padding-left: 1rem;
   margin-bottom: 1rem;
   font-size: 18px;
-  overflow: hidden;
-  text-overflow: ellipsis; }
+  text-overflow: ellipsis;
+  overflow: hidden; }
 
 .bg-grey-light {
   background-color: #f7f9f9; }
@@ -789,29 +868,41 @@ a {
   color: black; }
 
 /*BODY*/
-body .loader-quart {
-  position: relative;
-  top: 400px;
+body .loader-title {
+  animation: intro 5s ease-in forwards; }
+
+body .loader-container {
   width: 100%;
   height: 100%;
-  background-size: cover;
-  background-color: black; }
-  body .loader-quart:after {
-    content: "";
-    position: fixed;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    border: 6px solid transparent;
-    border-top-color: #9356dc;
-    border-bottom-color: #99e2d0;
-    border-right-color: #ff79da;
-    border-left-color: #ff79da;
-    animation: spin 2s linear infinite; }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: -1000; }
 
-body .spin-out {
-  opacity: 0;
-  transition: opacity 3s ease-out; }
+body .loader {
+  width: 350px;
+  height: 350px;
+  border-radius: 50px;
+  animation: loader 4s linear 1s forwards; }
+
+body .loader div {
+  box-sizing: border-box;
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border: 10px solid transparent;
+  border-top-color: #ad60f5;
+  border-radius: 50%;
+  animation: spinnerOne 3s cubic-bezier(0.34, 0.26, 0.73, 0.93) infinite both; }
+
+body .loader div:nth-child(2) {
+  border: 10px solid transparent;
+  border-bottom-color: #ff79da;
+  animation: spinnerOne 3s cubic-bezier(0.34, 0.26, 0.73, 0.93) infinite both; }
+
+body .main-content {
+  animation: page cubic-bezier(0.34, 0.26, 0.73, 0.93) 6s; }
 
 main {
   width: 100%;
@@ -857,8 +948,7 @@ main {
     @media screen and (min-width: 768px) {
       main .working .responsive {
         width: auto;
-        display: flex;
-        justify-content: space-around; } }
+        display: flex; } }
     main .working .responsive .working-bloc {
       width: 90%;
       height: 90px;
@@ -915,7 +1005,8 @@ main {
     @media screen and (min-width: 768px) {
       main .eatery .responsive {
         display: flex;
-        justify-content: space-around; } }
+        flex-wrap: wrap;
+        width: 420px; } }
     main .eatery .responsive .eatery-card {
       width: 100%;
       height: 300px;
@@ -924,9 +1015,7 @@ main {
       margin-bottom: 1.5rem; }
       @media screen and (min-width: 768px) {
         main .eatery .responsive .eatery-card {
-          display: inline-block;
-          flex-direction: column;
-          flex-wrap: wrap;
+          display: inline;
           margin-right: 20px; } }
       main .eatery .responsive .eatery-card img {
         width: 100%;
