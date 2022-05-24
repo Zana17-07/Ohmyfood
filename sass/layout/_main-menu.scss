@@ -42,8 +42,23 @@ img{
     position: relative;
     bottom: 60px;
     border-radius: 50px 50px 0 0;
-    .scrolling-cards-menu{
-        animation: scrolling 1s;
+    .scrolling-cards-menu1{
+        animation: 5s scrolling 1s;
+        @media screen and (min-width:768px){ 
+            display: flex;
+        }
+    }
+    .scrolling-cards-menu2{
+        animation: 10s scrolling 1s;
+        @media screen and (min-width:768px){ 
+            display: flex;  
+        }
+    }
+    .scrolling-cards-menu3{
+        animation: 15s scrolling 1s;
+        @media screen and (min-width:768px){ 
+            display: flex;
+        }
     }
         .eatery-card-menu{
             width: 105%;
@@ -55,14 +70,19 @@ img{
             margin-left: -0.5rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            overflow: hidden;
-            text-overflow: ellipsis;
             cursor: pointer;
+            @media screen and (min-width:768px){ 
+                display: inline-block;
+                margin-right: 20px;
+            }
+            &:active{
+            padding-right: 60px;
+            }
             &:active{
                 .fa-circle-check{
                     position: relative;
                     left: 438px;
-                    bottom: 59px; 
+                    bottom: 75px;
                     cursor: pointer; 
                     width: 80px;
                     height: 80px;
@@ -85,8 +105,8 @@ img{
                 font-size: 18px;
                 margin-block-end: $margin-block-end;
                 margin-block-start: $margin-block-start;
-            }   
-        } 
-}
+            }      
+        }
+}        
 
 

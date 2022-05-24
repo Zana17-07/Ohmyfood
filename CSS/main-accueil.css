@@ -325,30 +325,32 @@ template {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*Boutons Explorer et commander*/
 .btn {
   width: 55%;
-  height: 50px;
+  height: 55px;
   background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
   font-size: 1.1rem;
   border: 3px;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 16px 12px -12px grey;
   cursor: pointer; }
+  .btn:hover {
+    background: brightness(150%);
+    box-shadow: brightness(50%); }
 
 /*Boutons J'aime*/
 .fa-heart {
   position: absolute;
   left: 360px;
-  border: none;
   cursor: pointer; }
   .fa-heart:active {
-    background-clip: icon;
-    background-image: linear-gradient(#9356dc, #ff79da);
-    animation: progress-heart .5s ease-in-out;
-    /* ou font-weight: bold;
-        color: $primary;*/ }
+    font-weight: bold;
+    transform: scale(1);
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    animation: wheelHueColor .5s infinite; }
 
 /*color*/
 /*background-color fonds*/
@@ -356,10 +358,11 @@ template {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 footer {
   width: 100%;
   height: 250px;
-  background-color: #212121;
+  background-color: #424242;
   color: #fff;
   padding-left: 1.5rem;
   padding-top: 1.5rem; }
@@ -394,6 +397,7 @@ footer {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -419,12 +423,14 @@ h1 {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -479,8 +485,21 @@ img {
   position: relative;
   bottom: 60px;
   border-radius: 50px 50px 0 0; }
-  .eatery-section .scrolling-cards-menu {
-    animation: scrolling 1s; }
+  .eatery-section .scrolling-cards-menu1 {
+    animation: 5s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu1 {
+        display: flex; } }
+  .eatery-section .scrolling-cards-menu2 {
+    animation: 10s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu2 {
+        display: flex; } }
+  .eatery-section .scrolling-cards-menu3 {
+    animation: 15s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu3 {
+        display: flex; } }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -491,13 +510,17 @@ img {
     margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
     cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .eatery-card-menu {
+        display: inline-block;
+        margin-right: 20px; } }
+    .eatery-section .eatery-card-menu:active {
+      padding-right: 60px; }
     .eatery-section .eatery-card-menu:active .fa-circle-check {
       position: relative;
       left: 438px;
-      bottom: 59px;
+      bottom: 75px;
       cursor: pointer;
       width: 80px;
       height: 80px;
@@ -523,30 +546,32 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*Boutons Explorer et commander*/
 .btn {
   width: 55%;
-  height: 50px;
+  height: 55px;
   background: linear-gradient(#ff79da, #9356dc);
   color: #fff;
   font-size: 1.1rem;
   border: 3px;
-  border-radius: 25px 25px 25px 25px;
+  border-radius: 30px 30px 30px 30px;
   box-shadow: 0px 16px 12px -12px grey;
   cursor: pointer; }
+  .btn:hover {
+    background: brightness(150%);
+    box-shadow: brightness(50%); }
 
 /*Boutons J'aime*/
 .fa-heart {
   position: absolute;
   left: 360px;
-  border: none;
   cursor: pointer; }
   .fa-heart:active {
-    background-clip: icon;
-    background-image: linear-gradient(#9356dc, #ff79da);
-    animation: progress-heart .5s ease-in-out;
-    /* ou font-weight: bold;
-        color: $primary;*/ }
+    font-weight: bold;
+    transform: scale(1);
+    background-image: linear-gradient(45deg, white 10%, black 90%);
+    animation: wheelHueColor .5s infinite; }
 
 /*color*/
 /*background-color fonds*/
@@ -554,12 +579,14 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -614,8 +641,21 @@ img {
   position: relative;
   bottom: 60px;
   border-radius: 50px 50px 0 0; }
-  .eatery-section .scrolling-cards-menu {
-    animation: scrolling 1s; }
+  .eatery-section .scrolling-cards-menu1 {
+    animation: 5s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu1 {
+        display: flex; } }
+  .eatery-section .scrolling-cards-menu2 {
+    animation: 10s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu2 {
+        display: flex; } }
+  .eatery-section .scrolling-cards-menu3 {
+    animation: 15s scrolling 1s; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .scrolling-cards-menu3 {
+        display: flex; } }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -626,13 +666,17 @@ img {
     margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    overflow: hidden;
-    text-overflow: ellipsis;
     cursor: pointer; }
+    @media screen and (min-width: 768px) {
+      .eatery-section .eatery-card-menu {
+        display: inline-block;
+        margin-right: 20px; } }
+    .eatery-section .eatery-card-menu:active {
+      padding-right: 60px; }
     .eatery-section .eatery-card-menu:active .fa-circle-check {
       position: relative;
       left: 438px;
-      bottom: 59px;
+      bottom: 75px;
       cursor: pointer;
       width: 80px;
       height: 80px;
@@ -659,13 +703,13 @@ img {
   100% {
     transform: rotate(360deg); } }
 
-@keyframes progress-heart {
+@keyframes wheelHueColor {
   0% {
-    transform: translateY(0);
-    opacity: 0; }
+    color: #c32283; }
+  50% {
+    color: #8b29a3; }
   100% {
-    transform: translateY(1);
-    opacity: 1; } }
+    color: #8b29a3; } }
 
 @keyframes turn {
   0% {
@@ -693,12 +737,14 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
+/*medias queries*/
 /*GENERAL*/
 .flexcenter {
   display: flex;
@@ -718,7 +764,9 @@ h4 {
   margin-block-start: 0;
   padding-left: 1rem;
   padding-top: 1rem;
-  padding-right: 80px; }
+  padding-right: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .padding-title {
   padding-bottom: 2rem;
@@ -729,7 +777,9 @@ h4 {
   margin-block-start: 0;
   padding-left: 1rem;
   margin-bottom: 1rem;
-  font-size: 20px; }
+  font-size: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .bg-grey-light {
   background-color: #f7f9f9; }
@@ -763,13 +813,6 @@ body .spin-out {
   opacity: 0;
   transition: opacity 3s ease-out; }
 
-/*loader quart de cercle*/
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
 main {
   width: 100%;
   font-family: "Roboto", sans-serif;
@@ -790,7 +833,7 @@ main {
   main .bg-grey {
     background-color: #F2F2F2; }
   main .presentation {
-    height: 350px;
+    height: 320px;
     text-align: center;
     padding-top: 40px; }
     main .presentation .padding {
@@ -807,7 +850,16 @@ main {
   main .working {
     height: 550px;
     padding-left: 1.5rem; }
-    main .working .working-bloc {
+    @media screen and (min-width: 768px) {
+      main .working {
+        height: 250px;
+        padding-right: 2rem; } }
+    @media screen and (min-width: 768px) {
+      main .working .responsive {
+        width: auto;
+        display: flex;
+        justify-content: space-around; } }
+    main .working .responsive .working-bloc {
       width: 90%;
       height: 90px;
       border: 2px solid transparent;
@@ -815,9 +867,14 @@ main {
       box-shadow: 0px 16px 20px -16px grey;
       margin-left: 1rem;
       margin-bottom: 2rem; }
-      main .working .working-bloc:hover {
+      @media screen and (min-width: 768px) {
+        main .working .responsive .working-bloc {
+          display: flex;
+          flex-direction: column;
+          height: 120px; } }
+      main .working .responsive .working-bloc:hover {
         background-color: #ede7f6; }
-      main .working .working-bloc .round-number {
+      main .working .responsive .working-bloc .round-number {
         width: 6%;
         border: 1px solid transparent;
         border-radius: 25px 25px 25px 25px;
@@ -825,35 +882,60 @@ main {
         color: #fff;
         margin-right: 1.5rem;
         margin-left: -3rem; }
-      main .working .working-bloc .icon:hover {
+        @media screen and (min-width: 768px) {
+          main .working .responsive .working-bloc .round-number {
+            justify-content: center;
+            width: 8%;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 15px; } }
+      main .working .responsive .working-bloc .icon:hover {
         color: #9356dc; }
-      main .working .working-bloc .working-text {
+      main .working .responsive .working-bloc .working-text {
         font-family: "Roboto", sans-serif;
         margin-left: 2rem;
         padding-right: 2rem;
         font-weight: bold;
         font-size: 20px; }
-      main .working .working-bloc .margin-text-more {
+        @media screen and (min-width: 768px) {
+          main .working .responsive .working-bloc .working-text {
+            display: inline;
+            margin-left: 0;
+            padding-right: 0; } }
+      main .working .responsive .working-bloc .margin-text-more {
         margin-right: 1rem; }
+        @media screen and (min-width: 768px) {
+          main .working .responsive .working-bloc .margin-text-more {
+            margin-right: 0; } }
   main .eatery {
     height: auto;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-bottom: 3rem; }
-    main .eatery .eatery-card {
+    @media screen and (min-width: 768px) {
+      main .eatery .responsive {
+        display: flex;
+        justify-content: space-around; } }
+    main .eatery .responsive .eatery-card {
       width: 100%;
       height: 300px;
       box-shadow: 12px 12px 20px -16px grey;
       border-radius: 20px 20px 20px 20px;
       margin-bottom: 1.5rem; }
-      main .eatery .eatery-card img {
+      @media screen and (min-width: 768px) {
+        main .eatery .responsive .eatery-card {
+          display: inline-block;
+          flex-direction: column;
+          flex-wrap: wrap;
+          margin-right: 20px; } }
+      main .eatery .responsive .eatery-card img {
         width: 100%;
         height: 220px;
         border-radius: 20px 20px 0 0;
         object-fit: cover; }
-      main .eatery .eatery-card .tag {
+      main .eatery .responsive .eatery-card .tag {
         position: absolute;
-        left: 315px;
+        right: 40px;
         width: 20%;
         height: 40px;
         border: 2px solid transparent;
@@ -862,14 +944,7 @@ main {
         color: #0a8f08;
         font-weight: bold;
         font-size: 18px; }
-      main .eatery .eatery-card .fa-heart {
-        position: absolute;
-        left: 360px;
-        border: none;
-        cursor: pointer; }
-        main .eatery .eatery-card .fa-heart:active {
-          background-clip: icon;
-          background-image: linear-gradient(#9356dc, #ff79da);
-          animation: progress-heart .5s ease-in-out;
-          /* ou font-weight: bold;
-                    color: $primary;*/ }
+        @media screen and (min-width: 768px) {
+          main .eatery .responsive .eatery-card .tag {
+            right: none;
+            left: 25px; } }

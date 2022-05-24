@@ -12,15 +12,12 @@
     }
 }
 
-@keyframes progress-heart{
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(1);
-        opacity: 1;
-    }
+@keyframes wheelHueColor{
+    0%{ color: hsl(324, 70%, 45%); }
+    
+    50%{ color: hsl(288, 60%, 40%); }
+    
+    100%{ color: hsl(288, 60%, 40%); }
 }
 
 @keyframes turn{

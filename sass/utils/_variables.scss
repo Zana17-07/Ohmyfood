@@ -9,6 +9,7 @@ $text-colour-light: #fff;
 /*background-color fonds*/
 $bg-colour-lighter: #f7f9f9;
 
+
 /*Police titres ohmyfood et menus*/
 $font-logo: "Shrikhand", "cursive";
 
@@ -27,3 +28,7 @@ $margin-block-start: 0;
 
 /* padding*/
 $padding-left: 1.5rem;
+
+/*medias queries*/
+$tablet: (min-width:768px)and(max-width:1023px);
+$desktop: (min-width:1023px);
