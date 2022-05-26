@@ -325,7 +325,6 @@ template {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*Boutons Explorer et commander*/
 .btn {
   width: 55%;
@@ -338,8 +337,9 @@ template {
   box-shadow: 0px 16px 12px -12px grey;
   cursor: pointer; }
   .btn:hover {
-    background: brightness(150%);
-    box-shadow: brightness(50%); }
+    opacity: 0.15;
+    filter: brightness(200%);
+    filter: drop-shadow(8px 8px 4px black); }
 
 /*Boutons J'aime*/
 .fa-heart {
@@ -358,7 +358,6 @@ template {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 footer {
   width: 100%;
   height: 250px;
@@ -380,15 +379,15 @@ footer {
         padding-right: 0.5rem; }
       footer div div p {
         margin: 0.5rem;
-        font-size: 1.4rem; }
+        font-size: 1.2rem; }
     footer div p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       margin-block-end: 0;
       margin-block-start: 0;
       margin-bottom: 0.5rem; }
     footer div a {
       text-decoration: none;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       color: #fff; }
 
 /*color*/
@@ -397,7 +396,6 @@ footer {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -423,14 +421,12 @@ h1 {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -489,17 +485,23 @@ img {
     animation: 5s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu1 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .scrolling-cards-menu2 {
     animation: 10s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu2 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .scrolling-cards-menu3 {
     animation: 15s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu3 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -514,7 +516,7 @@ img {
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         display: inline-block;
-        width: 450px;
+        width: 420px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -547,7 +549,6 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*Boutons Explorer et commander*/
 .btn {
   width: 55%;
@@ -560,8 +561,9 @@ img {
   box-shadow: 0px 16px 12px -12px grey;
   cursor: pointer; }
   .btn:hover {
-    background: brightness(150%);
-    box-shadow: brightness(50%); }
+    opacity: 0.15;
+    filter: brightness(200%);
+    filter: drop-shadow(8px 8px 4px black); }
 
 /*Boutons J'aime*/
 .fa-heart {
@@ -580,14 +582,12 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 header {
   width: 100%; }
   header div {
@@ -646,17 +646,23 @@ img {
     animation: 5s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu1 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .scrolling-cards-menu2 {
     animation: 10s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu2 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .scrolling-cards-menu3 {
     animation: 15s scrolling 1s; }
     @media screen and (min-width: 768px) {
       .eatery-section .scrolling-cards-menu3 {
-        display: flex; } }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; } }
   .eatery-section .eatery-card-menu {
     width: 105%;
     height: 80px;
@@ -671,7 +677,7 @@ img {
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         display: inline-block;
-        width: 450px;
+        width: 420px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -816,14 +822,12 @@ img {
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
 /*Police texte*/
 /*marge*/
 /* padding*/
-/*medias queries*/
 /*GENERAL*/
 .flexcenter {
   display: flex;
@@ -931,7 +935,7 @@ main {
       padding-left: 5rem;
       padding-right: 5rem; }
     main .presentation p {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       padding-left: 1.5rem;
       padding-right: 1.5rem;
       padding-top: 0.5rem;
@@ -1006,7 +1010,8 @@ main {
       main .eatery .responsive {
         display: flex;
         flex-wrap: wrap;
-        width: 420px; } }
+        justify-content: center;
+        width: 100%; } }
     main .eatery .responsive .eatery-card {
       width: 100%;
       height: 300px;
@@ -1016,6 +1021,7 @@ main {
       @media screen and (min-width: 768px) {
         main .eatery .responsive .eatery-card {
           display: inline;
+          width: 400px;
           margin-right: 20px; } }
       main .eatery .responsive .eatery-card img {
         width: 100%;

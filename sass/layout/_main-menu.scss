@@ -46,18 +46,24 @@ img{
         animation: 5s scrolling 1s;
         @media screen and (min-width:768px){ 
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
     .scrolling-cards-menu2{
         animation: 10s scrolling 1s;
         @media screen and (min-width:768px){ 
-            display: flex;  
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;  
         }
     }
     .scrolling-cards-menu3{
         animation: 15s scrolling 1s;
         @media screen and (min-width:768px){ 
             display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
     }
         .eatery-card-menu{
@@ -73,7 +79,7 @@ img{
             cursor: pointer;
             @media screen and (min-width:768px){ 
                 display: inline-block;
-                width: 450px;
+                width: 420px;
                 margin-right: 20px;
             }
             &:active{
