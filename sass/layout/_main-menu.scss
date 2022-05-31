@@ -67,16 +67,19 @@ img{
         }
     }
         .eatery-card-menu{
+            display: inline-block;
             width: 105%;
-            height: 80px;
+            /*height: 80px;*/
             background-color: #fff;
             box-shadow: 12px 12px 20px -16px grey;
             border-radius: 20px 20px 20px 20px;
-            margin-right: -0.5rem;
-            margin-left: -0.5rem;
+           /* margin-right: -0.5rem;
+            margin-left: -0.5rem;*/
             margin-top: 1rem;
             margin-bottom: 1rem;
             cursor: pointer;
+            overflow: hidden;
+            text-overflow: ellipsis;
             @media screen and (min-width:768px){ 
                 display: inline-block;
                 width: 420px;
@@ -113,6 +116,48 @@ img{
                 margin-block-end: $margin-block-end;
                 margin-block-start: $margin-block-start;
             }      
+        }
+        .info-card{
+            width: 100%;
+            padding: 0 0 10px 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price{
+            display: flex;
+            margin-right: 15px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .check-box{
+            background-color: $tertiary;
+            color: #fff;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 0;
+            transform: scaleX(0);
+            transition: transform 500ms ease-in-out;
+            transform-origin: center right;
+        }
+        .check-box i{
+            transform: rotate(1turn);
+            transition: transform 500ms ease-in-out;
+        }
+        .eatery-card-menu:hover > .check-box {
+            transform: scaleX(1);
+            transform-origin: center right;
+            width: 6rem;
+        }
+        .eatery-card-menu:hover > .check-box > i {
+            transform: rotate(-1turn);
+        }
+        .bloc1{
+            display: inline-block;
+
         }
 }        
 
