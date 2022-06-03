@@ -343,13 +343,24 @@ template {
 /*Boutons J'aime*/
 .fa-heart {
   position: absolute;
-  left: 360px;
+  right: 40px;
+  font-size: 2rem;
   cursor: pointer; }
-  .fa-heart:active {
-    font-weight: bold;
-    transform: scale(1);
-    background-image: linear-gradient(45deg, white 10%, black 90%);
-    animation: wheelHueColor .5s infinite; }
+
+.fas {
+  position: absolute;
+  right: 40px;
+  height: 2.8rem;
+  font-size: 2.1rem;
+  color: transparent; }
+
+.fas:active {
+  position: absolute;
+  bottom: 8px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  animation: progress-heart .4s ease-in-out; }
 
 /*color*/
 /*background-color fonds*/
@@ -481,35 +492,28 @@ img {
   bottom: 60px;
   border-radius: 50px 50px 0 0; }
   .eatery-section .scrolling-cards-menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     animation: 5s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
   .eatery-section .scrolling-cards-menu2 {
-    animation: 10s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 5s scrolling 1s; }
   .eatery-section .scrolling-cards-menu3 {
-    animation: 15s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 5s scrolling 1s; }
   .eatery-section .eatery-card-menu {
-    display: inline-block;
-    width: 105%;
-    /*height: 80px;*/
+    width: 420px;
+    height: 75px;
     background-color: #fff;
     box-shadow: 12px 12px 20px -16px grey;
     border-radius: 20px 20px 20px 20px;
-    /* margin-right: -0.5rem;
-            margin-left: -0.5rem;*/
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -517,7 +521,6 @@ img {
     text-overflow: ellipsis; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
-        display: inline-block;
         width: 420px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
@@ -536,49 +539,55 @@ img {
       .eatery-section .eatery-card-menu:active .fa-circle-check:before {
         color: #FFF;
         animation: turn 250ms linear 3; }
-    .eatery-section .eatery-card-menu .eatery-text-menu {
-      font-size: 18px;
-      margin: 0; }
     .eatery-section .eatery-card-menu .eatery-price {
       font-weight: bold;
       font-size: 18px;
+      padding-bottom: 1rem;
       margin-block-end: 0;
       margin-block-start: 0; }
-  .eatery-section .info-card {
-    width: 100%;
-    padding: 0 0 10px 10px;
-    text-overflow: ellipsis;
-    overflow: hidden; }
-  .eatery-section .price {
-    display: flex;
-    margin-right: 15px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: flex-end; }
-  .eatery-section .check-box {
-    background-color: #99e2d0;
-    color: #fff;
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 0;
-    transform: scaleX(0);
-    transition: transform 500ms ease-in-out;
-    transform-origin: center right; }
-  .eatery-section .check-box i {
-    transform: rotate(1turn);
-    transition: transform 500ms ease-in-out; }
-  .eatery-section .eatery-card-menu:hover > .check-box {
-    transform: scaleX(1);
-    transform-origin: center right;
-    width: 6rem; }
-  .eatery-section .eatery-card-menu:hover > .check-box > i {
-    transform: rotate(-1turn); }
-  .eatery-section .bloc1 {
-    display: inline-block; }
 
+/*.info-card{
+            width: 100%;
+            padding: 0 0 10px 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price{
+            display: flex;
+            margin-right: 15px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .check-box{
+            background-color: $tertiary;
+            color: #fff;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 0;
+            transform: scaleX(0);
+            transition: transform 500ms ease-in-out;
+            transform-origin: center right;
+        }
+        .check-box i{
+            transform: rotate(1turn);
+            transition: transform 500ms ease-in-out;
+        }
+        .eatery-card-menu:hover > .check-box {
+            transform: scaleX(1);
+            transform-origin: center right;
+            width: 6rem;
+        }
+        .eatery-card-menu:hover > .check-box > i {
+            transform: rotate(-1turn);
+        }
+        .bloc1{
+            display: inline-block;
+
+        }*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
@@ -603,13 +612,24 @@ img {
 /*Boutons J'aime*/
 .fa-heart {
   position: absolute;
-  left: 360px;
+  right: 40px;
+  font-size: 2rem;
   cursor: pointer; }
-  .fa-heart:active {
-    font-weight: bold;
-    transform: scale(1);
-    background-image: linear-gradient(45deg, white 10%, black 90%);
-    animation: wheelHueColor .5s infinite; }
+
+.fas {
+  position: absolute;
+  right: 40px;
+  height: 2.8rem;
+  font-size: 2.1rem;
+  color: transparent; }
+
+.fas:active {
+  position: absolute;
+  bottom: 8px;
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to top, #ff79da, #9356dc);
+  animation: progress-heart .4s ease-in-out; }
 
 /*color*/
 /*background-color fonds*/
@@ -678,35 +698,28 @@ img {
   bottom: 60px;
   border-radius: 50px 50px 0 0; }
   .eatery-section .scrolling-cards-menu1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     animation: 5s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu1 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
   .eatery-section .scrolling-cards-menu2 {
-    animation: 10s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu2 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 5s scrolling 1s; }
   .eatery-section .scrolling-cards-menu3 {
-    animation: 15s scrolling 1s; }
-    @media screen and (min-width: 768px) {
-      .eatery-section .scrolling-cards-menu3 {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; } }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: 5s scrolling 1s; }
   .eatery-section .eatery-card-menu {
-    display: inline-block;
-    width: 105%;
-    /*height: 80px;*/
+    width: 420px;
+    height: 75px;
     background-color: #fff;
     box-shadow: 12px 12px 20px -16px grey;
     border-radius: 20px 20px 20px 20px;
-    /* margin-right: -0.5rem;
-            margin-left: -0.5rem;*/
+    margin-right: -0.5rem;
+    margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     cursor: pointer;
@@ -714,7 +727,6 @@ img {
     text-overflow: ellipsis; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
-        display: inline-block;
         width: 420px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
@@ -733,49 +745,55 @@ img {
       .eatery-section .eatery-card-menu:active .fa-circle-check:before {
         color: #FFF;
         animation: turn 250ms linear 3; }
-    .eatery-section .eatery-card-menu .eatery-text-menu {
-      font-size: 18px;
-      margin: 0; }
     .eatery-section .eatery-card-menu .eatery-price {
       font-weight: bold;
       font-size: 18px;
+      padding-bottom: 1rem;
       margin-block-end: 0;
       margin-block-start: 0; }
-  .eatery-section .info-card {
-    width: 100%;
-    padding: 0 0 10px 10px;
-    text-overflow: ellipsis;
-    overflow: hidden; }
-  .eatery-section .price {
-    display: flex;
-    margin-right: 15px;
-    padding-bottom: 10px;
-    align-items: center;
-    justify-content: flex-end; }
-  .eatery-section .check-box {
-    background-color: #99e2d0;
-    color: #fff;
-    border-radius: 0 20px 20px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: 0;
-    transform: scaleX(0);
-    transition: transform 500ms ease-in-out;
-    transform-origin: center right; }
-  .eatery-section .check-box i {
-    transform: rotate(1turn);
-    transition: transform 500ms ease-in-out; }
-  .eatery-section .eatery-card-menu:hover > .check-box {
-    transform: scaleX(1);
-    transform-origin: center right;
-    width: 6rem; }
-  .eatery-section .eatery-card-menu:hover > .check-box > i {
-    transform: rotate(-1turn); }
-  .eatery-section .bloc1 {
-    display: inline-block; }
 
+/*.info-card{
+            width: 100%;
+            padding: 0 0 10px 10px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+        .price{
+            display: flex;
+            margin-right: 15px;
+            padding-bottom: 10px;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .check-box{
+            background-color: $tertiary;
+            color: #fff;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            width: 0;
+            transform: scaleX(0);
+            transition: transform 500ms ease-in-out;
+            transform-origin: center right;
+        }
+        .check-box i{
+            transform: rotate(1turn);
+            transition: transform 500ms ease-in-out;
+        }
+        .eatery-card-menu:hover > .check-box {
+            transform: scaleX(1);
+            transform-origin: center right;
+            width: 6rem;
+        }
+        .eatery-card-menu:hover > .check-box > i {
+            transform: rotate(-1turn);
+        }
+        .bloc1{
+            display: inline-block;
+
+        }*/
 /*loader*/
 @keyframes intro {
   0% {
@@ -858,13 +876,19 @@ img {
     top: 4000px; } }
 
 /*Heart*/
-@keyframes wheelHueColor {
+@keyframes progress-heart {
   0% {
-    color: #c32283; }
-  50% {
-    color: #8b29a3; }
+    opacity: 0; }
+  20% {
+    opacity: 0.2; }
+  40% {
+    opacity: 0.4; }
+  60% {
+    opacity: 0.6; }
+  80% {
+    opacity: 0.8; }
   100% {
-    color: #8b29a3; } }
+    opacity: 1; } }
 
 /*Appear main*/
 @keyframes turn {
@@ -1089,6 +1113,7 @@ main {
         justify-content: center;
         width: 100%; } }
     main .eatery .responsive .eatery-card {
+      position: relative;
       width: 100%;
       height: 300px;
       box-shadow: 12px 12px 20px -16px grey;
@@ -1106,16 +1131,12 @@ main {
         object-fit: cover; }
       main .eatery .responsive .eatery-card .tag {
         position: absolute;
-        right: 40px;
-        width: 20%;
+        right: 15px;
+        width: 6rem;
         height: 40px;
         border: 2px solid transparent;
         border-radius: 2px 2px 2px 2px;
         background-color: #99e2d0;
-        color: #0a8f08;
+        color: #1b6150;
         font-weight: bold;
         font-size: 18px; }
-        @media screen and (min-width: 768px) {
-          main .eatery .responsive .eatery-card .tag {
-            right: none;
-            left: 25px; } }

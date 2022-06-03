@@ -23,12 +23,23 @@
 /*Boutons J'aime*/
 .fa-heart{
     position: absolute;
-    left: 360px;
-    cursor:pointer;
-    &:active{
-        font-weight: bold;
-        transform: scale(1);
-        background-image: linear-gradient(45deg, white 10%, black 90%);
-        animation: wheelHueColor .5s infinite;
-    }
+    right: 40px;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.fas{
+    position: absolute;
+    right: 40px;
+    height: 2.8rem;
+    font-size: 2.1rem;
+    color: transparent;
+}
+.fas:active{
+    position: absolute;
+    bottom: 8px;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(to top, $secondary, $primary);
+    animation: progress-heart .4s ease-in-out;
 }

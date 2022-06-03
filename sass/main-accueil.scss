@@ -246,6 +246,7 @@ main{
                   
             }    
             .eatery-card{
+                position: relative;
                 width: 100%;
                 height: 300px;
                 box-shadow: 12px 12px 20px -16px grey;
@@ -264,19 +265,15 @@ main{
                 }
                 .tag{
                     position: absolute;
-                    right: 40px;           
-                    width: 20%;
+                    right: 15px;           
+                    width: 6rem;
                     height: 40px;
                     border: 2px solid transparent;
                     border-radius: 2px 2px 2px 2px;
                     background-color: $tertiary;
-                    color: #0a8f08;
+                    color: darken($color: $tertiary, $amount: 50%);
                     font-weight: bold;
                     font-size: 18px;
-                    @media screen and (min-width:768px){ 
-                        right: none;
-                        left: 25px;
-                    }
                 }   
             }
         }
