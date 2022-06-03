@@ -46,19 +46,19 @@ img{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        animation: 5s scrolling 1s;
+        animation: 3s scrolling 1s;
     }
     .scrolling-cards-menu2{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        animation: 5s scrolling 1s;
+        animation: 6s scrolling 1s;
     }
     .scrolling-cards-menu3{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        animation: 5s scrolling 1s;
+        animation: 9s scrolling 1s;
     }
         .eatery-card-menu{
             width: 420px;
@@ -70,9 +70,9 @@ img{
             margin-left: -0.5rem;
             margin-top: 1rem;
             margin-bottom: 1rem;
-            cursor: pointer;
             overflow: hidden;
             text-overflow: ellipsis;
+            cursor: pointer;
             @media screen and (min-width:768px){ 
                 width: 420px;
                 margin-right: 20px;

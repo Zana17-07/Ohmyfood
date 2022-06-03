@@ -33,6 +33,7 @@ h4{
     padding-top: 1rem;
     padding-right: 80px;
     text-overflow: ellipsis;
+    white-space: nowrap;
     overflow: hidden;
      
 }
@@ -54,8 +55,8 @@ h4{
     margin-bottom: 1rem;
     font-size: 18px;
     text-overflow: ellipsis; 
-    overflow: hidden;
-    
+    white-space: nowrap;
+    overflow: hidden; 
 }
 
 .bg-grey-light{

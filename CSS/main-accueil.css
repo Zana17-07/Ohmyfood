@@ -495,17 +495,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 3s scrolling 1s; }
   .eatery-section .scrolling-cards-menu2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 6s scrolling 1s; }
   .eatery-section .scrolling-cards-menu3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 9s scrolling 1s; }
   .eatery-section .eatery-card-menu {
     width: 420px;
     height: 75px;
@@ -516,9 +516,9 @@ img {
     margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    cursor: pointer;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         width: 420px;
@@ -701,17 +701,17 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 3s scrolling 1s; }
   .eatery-section .scrolling-cards-menu2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 6s scrolling 1s; }
   .eatery-section .scrolling-cards-menu3 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    animation: 5s scrolling 1s; }
+    animation: 9s scrolling 1s; }
   .eatery-section .eatery-card-menu {
     width: 420px;
     height: 75px;
@@ -722,9 +722,9 @@ img {
     margin-left: -0.5rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    cursor: pointer;
     overflow: hidden;
-    text-overflow: ellipsis; }
+    text-overflow: ellipsis;
+    cursor: pointer; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
         width: 420px;
@@ -945,6 +945,7 @@ h4 {
   padding-top: 1rem;
   padding-right: 80px;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden; }
 
 .subtitles {
@@ -962,6 +963,7 @@ h4 {
   margin-bottom: 1rem;
   font-size: 18px;
   text-overflow: ellipsis;
+  white-space: nowrap;
   overflow: hidden; }
 
 .bg-grey-light {
