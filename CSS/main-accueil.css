@@ -354,6 +354,10 @@ template {
   font-size: 2.1rem;
   color: transparent; }
 
+.position-heart {
+  position: absolute;
+  bottom: 1.2rem; }
+
 .fas:active {
   color: transparent;
   background-clip: text;
@@ -620,6 +624,10 @@ img {
   height: 2.1rem;
   font-size: 2.1rem;
   color: transparent; }
+
+.position-heart {
+  position: absolute;
+  bottom: 1.2rem; }
 
 .fas:active {
   color: transparent;
