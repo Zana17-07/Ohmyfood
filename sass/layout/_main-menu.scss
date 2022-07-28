@@ -64,7 +64,7 @@ img{
         animation: 9s scrolling 1s;
     }
         .eatery-card-menu{
-            width: 420px;
+            width: 320px;
             height: 75px;
             background-color: #fff;
             box-shadow: 12px 12px 20px -16px grey;
@@ -77,7 +77,7 @@ img{
             text-overflow: ellipsis;
             cursor: pointer;
             @media screen and (min-width:768px){ 
-                width: 420px;
+                width: 320px;
                 margin-right: 20px;
             }
             &:active{
@@ -116,45 +116,3 @@ img{
 
 
 
-/*.info-card{
-            width: 100%;
-            padding: 0 0 10px 10px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .price{
-            display: flex;
-            margin-right: 15px;
-            padding-bottom: 10px;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .check-box{
-            background-color: $tertiary;
-            color: #fff;
-            border-radius: 0 20px 20px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            width: 0;
-            transform: scaleX(0);
-            transition: transform 500ms ease-in-out;
-            transform-origin: center right;
-        }
-        .check-box i{
-            transform: rotate(1turn);
-            transition: transform 500ms ease-in-out;
-        }
-        .eatery-card-menu:hover > .check-box {
-            transform: scaleX(1);
-            transform-origin: center right;
-            width: 6rem;
-        }
-        .eatery-card-menu:hover > .check-box > i {
-            transform: rotate(-1turn);
-        }
-        .bloc1{
-            display: inline-block;
-
-        }*/

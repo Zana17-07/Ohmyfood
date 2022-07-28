@@ -511,7 +511,7 @@ img {
     justify-content: center;
     animation: 9s scrolling 1s; }
   .eatery-section .eatery-card-menu {
-    width: 420px;
+    width: 320px;
     height: 75px;
     background-color: #fff;
     box-shadow: 12px 12px 20px -16px grey;
@@ -525,7 +525,7 @@ img {
     cursor: pointer; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
-        width: 420px;
+        width: 320px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -550,48 +550,6 @@ img {
       margin-block-end: 0;
       margin-block-start: 0; }
 
-/*.info-card{
-            width: 100%;
-            padding: 0 0 10px 10px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .price{
-            display: flex;
-            margin-right: 15px;
-            padding-bottom: 10px;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .check-box{
-            background-color: $tertiary;
-            color: #fff;
-            border-radius: 0 20px 20px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            width: 0;
-            transform: scaleX(0);
-            transition: transform 500ms ease-in-out;
-            transform-origin: center right;
-        }
-        .check-box i{
-            transform: rotate(1turn);
-            transition: transform 500ms ease-in-out;
-        }
-        .eatery-card-menu:hover > .check-box {
-            transform: scaleX(1);
-            transform-origin: center right;
-            width: 6rem;
-        }
-        .eatery-card-menu:hover > .check-box > i {
-            transform: rotate(-1turn);
-        }
-        .bloc1{
-            display: inline-block;
-
-        }*/
 /*color*/
 /*background-color fonds*/
 /*Police titres ohmyfood et menus*/
@@ -722,7 +680,7 @@ img {
     justify-content: center;
     animation: 9s scrolling 1s; }
   .eatery-section .eatery-card-menu {
-    width: 420px;
+    width: 320px;
     height: 75px;
     background-color: #fff;
     box-shadow: 12px 12px 20px -16px grey;
@@ -736,7 +694,7 @@ img {
     cursor: pointer; }
     @media screen and (min-width: 768px) {
       .eatery-section .eatery-card-menu {
-        width: 420px;
+        width: 320px;
         margin-right: 20px; } }
     .eatery-section .eatery-card-menu:active {
       padding-right: 60px; }
@@ -761,48 +719,6 @@ img {
       margin-block-end: 0;
       margin-block-start: 0; }
 
-/*.info-card{
-            width: 100%;
-            padding: 0 0 10px 10px;
-            text-overflow: ellipsis;
-            overflow: hidden;
-        }
-        .price{
-            display: flex;
-            margin-right: 15px;
-            padding-bottom: 10px;
-            align-items: center;
-            justify-content: flex-end;
-        }
-        .check-box{
-            background-color: $tertiary;
-            color: #fff;
-            border-radius: 0 20px 20px 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-            width: 0;
-            transform: scaleX(0);
-            transition: transform 500ms ease-in-out;
-            transform-origin: center right;
-        }
-        .check-box i{
-            transform: rotate(1turn);
-            transition: transform 500ms ease-in-out;
-        }
-        .eatery-card-menu:hover > .check-box {
-            transform: scaleX(1);
-            transform-origin: center right;
-            width: 6rem;
-        }
-        .eatery-card-menu:hover > .check-box > i {
-            transform: rotate(-1turn);
-        }
-        .bloc1{
-            display: inline-block;
-
-        }*/
 /*loader*/
 @keyframes intro {
   0% {
@@ -910,7 +826,7 @@ img {
   0% {
     transform: translateX(0); }
   100% {
-    transform: translateX(-120%); } }
+    transform: translateX(-248%); } }
 
 /*Scroll main*/
 @keyframes scrolling {
