@@ -421,6 +421,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", "cursive";
+  font-size: 28px;
   margin-block-end: 0;
   margin-block-start: 0;
   padding-bottom: 0.5rem;
@@ -452,6 +453,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", "cursive";
+  font-size: 28px;
   margin-block-end: 0;
   margin-block-start: 0;
   padding-bottom: 0.5rem;
@@ -621,6 +623,7 @@ h1 {
   display: flex;
   justify-content: center;
   font-family: "Shrikhand", "cursive";
+  font-size: 28px;
   margin-block-end: 0;
   margin-block-start: 0;
   padding-bottom: 0.5rem;
@@ -965,7 +968,8 @@ main {
       margin-block-end: 0; }
   main .working {
     height: 550px;
-    padding-left: 1.5rem; }
+    padding-left: 1.1rem;
+    margin-right: 1rem; }
     @media screen and (min-width: 768px) {
       main .working {
         height: 250px;
@@ -975,12 +979,11 @@ main {
         width: auto;
         display: flex; } }
     main .working .responsive .working-bloc {
-      width: 90%;
+      width: 100%;
       height: 90px;
       border: 2px solid transparent;
       border-radius: 20px 20px 20px 20px;
       box-shadow: 0px 16px 20px -16px grey;
-      margin-left: 1rem;
       margin-bottom: 2rem; }
       @media screen and (min-width: 768px) {
         main .working .responsive .working-bloc {
@@ -995,8 +998,8 @@ main {
         border-radius: 25px 25px 25px 25px;
         background-color: #9356dc;
         color: #fff;
-        margin-right: 1.5rem;
-        margin-left: -3rem; }
+        margin-right: 1rem;
+        margin-left: -1.5rem; }
         @media screen and (min-width: 768px) {
           main .working .responsive .working-bloc .round-number {
             justify-content: center;
@@ -1008,7 +1011,7 @@ main {
         color: #9356dc; }
       main .working .responsive .working-bloc .working-text {
         font-family: "Roboto", sans-serif;
-        margin-left: 2rem;
+        margin-left: 1rem;
         padding-right: 2rem;
         font-weight: bold;
         font-size: 20px; }
