@@ -67,6 +67,10 @@ a{
     color: black;
 }
 
+.padding-bottom{
+    padding-bottom: 3rem;
+}
+
 /*BODY*/
 body{
     .loader-title{
@@ -160,7 +164,7 @@ main{
 
 /*Fonctionnement*/
     .working{
-        height: 550px;
+        height: 500px;
         padding-left: 1.1rem;
         margin-right: 1rem;
         @media screen and (min-width:768px){   
@@ -236,15 +240,13 @@ main{
         height: auto;
         padding-left: 1.5rem;
         padding-right: 1.5rem;
-        padding-bottom: 3rem;
         .responsive{
             @media screen and (min-width:768px){ 
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                width: 100%;
-                  
-            }    
+                width: 100%;     
+            }  
             .eatery-card{
                 position: relative;
                 width: 100%;
